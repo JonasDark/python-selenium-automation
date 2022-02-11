@@ -15,5 +15,6 @@
 7. *Conditions of use link = By.XPATH, "//a[contains(@href, 'nodeId=508088')]"
 
 8. *Privacy Notice link = By.XPATH, "//a[contains(@href, 'nodeId=468496')]"
+
 '''
 
