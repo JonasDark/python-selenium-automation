@@ -6,3 +6,6 @@ Feature: Test Scenarios for Amazon Cart
     Given Open Amazon page
     When Click the cart icon
     Then Verify cart is empty
+
+    
+
