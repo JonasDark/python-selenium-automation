@@ -6,3 +6,16 @@ Feature: Amazon Main Page
     Given Open Amazon main page
     Then Click 'Orders' button
     Then Verify 'Sign-In' page opens
+
+
+  Scenario Outline: Verify user can select and search in a department
+    Given Open Amazon Main Page
+    When select department by alias <alias>
+    And Search for <search_word> in department
+    And Click on search icon
+    Then Verify <department> department selected
+    Examples:
+    |  alias        |  search_word  |  department  |
+    |  pets         |  cat tower    |  pet-supplies|
+    |  stripbooks   |  nietschze    |  books       |
+    |  popular      |  iron maiden  |  music       |
